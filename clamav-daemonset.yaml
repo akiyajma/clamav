@@ -18,7 +18,7 @@ spec:
         effect: NoSchedule
       containers:
       - name: clamav-scanner
-        image: gcr.io/clamav-328013/clamav
+        image: gcr.io/service-330312/clamav
         resources:
           limits:
             memory: 3Gi
