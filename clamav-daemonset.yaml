@@ -51,7 +51,7 @@ spec:
         emptyDir: {}
       - name: host-fs
         hostPath:
-          path: /home/akiyamko423
+          path: /
       - name: logs
         hostPath:
           path: /var/log/clamav
