@@ -23,7 +23,7 @@ spec:
           limits:
             memory: 3Gi
           requests:
-            cpu: 500m
+            cpu: 300m
             memory: 2Gi
         volumeMounts:
         - name: data-vol
