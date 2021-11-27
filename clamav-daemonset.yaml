@@ -39,12 +39,6 @@ spec:
               - /health.sh
           initialDelaySeconds: 60
           periodSeconds: 30
-        # add
-        readinessProbe:
-          exec:
-            command:
-              - /scan.sh
-          periodSeconds: 120
       terminationGracePeriodSeconds: 30
       volumes:
       - name: data-vol
