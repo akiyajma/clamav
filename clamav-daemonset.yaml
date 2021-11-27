@@ -23,7 +23,7 @@ spec:
           limits:
             memory: 3Gi
           requests:
-            cpu: 500m
+            cpu: 300m
             memory: 2Gi
         volumeMounts:
         - name: data-vol
@@ -39,12 +39,6 @@ spec:
               - /health.sh
           initialDelaySeconds: 60
           periodSeconds: 30
-        # add
-        readinessProbe:
-          exec:
-            command:
-              - /scan.sh
-          periodSeconds: 120
       terminationGracePeriodSeconds: 30
       volumes:
       - name: data-vol
